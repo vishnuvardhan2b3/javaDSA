@@ -1,0 +1,10 @@
+head=document.getElementById("header");
+btn=document.querySelector('button');
+btn.onclick=function()
+{
+    head.classList.toggle('wavy');
+}
+btn.onclick=function()
+{
+    head.classList.toggle('green');
+}
