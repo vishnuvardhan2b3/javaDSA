@@ -1,0 +1,16 @@
+{
+  "request": "curl --location --request GET 'http://localhost:3000/student/103' \\\n--header 'Content-Type: application/json' \\\n--data '{\n  \"name\":\"raja\",\n  \"course\":\"React\"\n}'",
+  "response": {
+    "status": 404,
+    "statusText": "Not Found",
+    "headers": {
+      "x-powered-by": "Express",
+      "content-type": "application/json; charset=utf-8",
+      "content-length": "52",
+      "etag": "W/\"34-vivWGeboDOMy2lEM1Tcc0kpYvjA\"",
+      "date": "Mon, 12 Oct 2026 06:29:22 GMT",
+      "connection": "close"
+    },
+    "data": "{\"message\":\"student with given 103 id is not found\"}"
+  }
+}
