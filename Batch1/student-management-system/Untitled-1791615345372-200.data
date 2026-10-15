@@ -1,16 +1,16 @@
 {
-  "request": "curl --location --request GET 'http://localhost:3000/student/102' \\\n--header 'Content-Type: application/json' \\\n--data '{\n  \"name\":\"raja\",\n  \"course\":\"React\"\n}'",
+  "request": "curl --location 'http://localhost:3000/student' \\\n--header 'Content-Type: application/json' \\\n--data '{\n  \"name\":\"ramana\",\n  \"course\":\"java\"\n}'",
   "response": {
     "status": 200,
     "statusText": "OK",
     "headers": {
       "x-powered-by": "Express",
       "content-type": "application/json; charset=utf-8",
-      "content-length": "49",
-      "etag": "W/\"31-IvyO6J8T8T6dSzxaDPazVEC0icE\"",
-      "date": "Mon, 12 Oct 2026 06:29:17 GMT",
+      "content-length": "42",
+      "etag": "W/\"2a-JO/1frqWgidwE5fWvC+lLPhYkE8\"",
+      "date": "Wed, 14 Oct 2026 17:22:02 GMT",
       "connection": "close"
     },
-    "data": "{\"id\":102,\"name\":\"ramu\",\"age\":22,\"course\":\"java\"}"
+    "data": "{\"id\":104,\"name\":\"ramana\",\"course\":\"java\"}"
   }
 }

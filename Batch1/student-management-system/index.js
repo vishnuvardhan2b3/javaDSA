@@ -20,10 +20,32 @@ app.get('/student/:id',(req,res)=>{
     }
     res.json(student)
 })
+app.get('/students/course',(req,res)=>{
+    const {course}=req.query;
+    const filteredStudents=students.filter(student=>student.course===course);
+    console.log(filteredStudents);
+    if(!filteredStudents){
+        res.status(400).json({
+            message:"student with the given course were not available"
+        })
+    }
+    res.status(200).json(filteredStudents);
+})
 app.post('/student',(req,res)=>{
-    const student=req.body
-
-    res.json(student)
+    const {name,course}=req.body;
+    if(!name){
+        res.status(400).json({message:"Title is required"})
+    }
+    if(!course){
+        res.status(400).json({message:"Course is Required"})
+    }
+    const newStudent={
+        id:Math.max(...students.map(student=>student.id))+1,
+        name,
+        course
+    };
+    students.push(newStudent);
+    res.status(200).json(newStudent);
 })
 app.listen(3000,()=>{
     console.log("Server started and running on port no 3000");

@@ -1,0 +1,53 @@
+{
+  "readme": "To open this file inside VSCode, you need to install Thor Client extension https://thorclient.com/",
+  "request": {
+    "url": {
+      "raw": "http://localhost:3000/students/course?course=python",
+      "query": [
+        {
+          "id": "cf44bfde-e638-42d0-b051-95b36bda52df",
+          "key": "course",
+          "value": "python",
+          "disabled": false,
+          "type": "string",
+          "isFound": true
+        },
+        {
+          "id": "4812a549-f55d-4304-b2f9-4931ad4ee321",
+          "key": "c",
+          "value": "",
+          "disabled": false,
+          "type": "string",
+          "isFound": true
+        }
+      ]
+    },
+    "body": {
+      "mode": "raw",
+      "options": {
+        "raw": {
+          "language": "json"
+        }
+      },
+      "raw": "{\n  \"name\":\"ramana\",\n  \"course\":\"java\"\n}"
+    },
+    "header": [
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "method": "GET"
+  },
+  "event": {
+    "assert": [
+      {
+        "key": "response.status",
+        "value": "200",
+        "disabled": false,
+        "type": "text",
+        "operator": "=="
+      }
+    ]
+  }
+}
