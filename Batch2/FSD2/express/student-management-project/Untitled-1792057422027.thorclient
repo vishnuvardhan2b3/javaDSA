@@ -1,0 +1,44 @@
+{
+  "readme": "To open this file inside VSCode, you need to install Thor Client extension https://thorclient.com/",
+  "request": {
+    "url": {
+      "raw": "http://localhost:3000/student",
+      "query": [
+        {
+          "id": "4572b62b-5254-4a3f-85a6-8d59ca6dc35f",
+          "key": "c",
+          "value": "",
+          "type": "string",
+          "isFound": true
+        }
+      ]
+    },
+    "method": "POST",
+    "body": {
+      "mode": "raw",
+      "options": {
+        "raw": {
+          "language": "json"
+        }
+      },
+      "raw": "{\n  \"name\":\"Tejesh\",\n  \"age\":25\n}"
+    },
+    "header": [
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      }
+    ]
+  },
+  "event": {
+    "assert": [
+      {
+        "key": "response.status",
+        "value": "200",
+        "disabled": false,
+        "type": "text",
+        "operator": "=="
+      }
+    ]
+  }
+}

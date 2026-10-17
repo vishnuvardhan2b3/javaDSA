@@ -1,0 +1,16 @@
+{
+  "request": "curl --location 'http://localhost:3000/student' \\\n--header 'Content-Type: application/json' \\\n--data '{\n  \"name\":\"Tejesh\",\n  \"age\":25\n}'",
+  "response": {
+    "status": 400,
+    "statusText": "Bad Request",
+    "headers": {
+      "x-powered-by": "Express",
+      "content-type": "application/json; charset=utf-8",
+      "content-length": "32",
+      "etag": "W/\"20-ADnahCvx5X+10bcgx3o5AC+hS9g\"",
+      "date": "Fri, 16 Oct 2026 09:07:40 GMT",
+      "connection": "close"
+    },
+    "data": "{\"message\":\"Course is required\"}"
+  }
+}

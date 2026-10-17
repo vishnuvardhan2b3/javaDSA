@@ -1,0 +1,16 @@
+{
+  "request": "curl --location 'http://localhost:3000/student' \\\n--header 'Content-Type: application/json' \\\n--data '{\n  \"name\":\"Tejesh\",\n  \"age\":25,\n  \"course\":\"Express\"\n}'",
+  "response": {
+    "status": 200,
+    "statusText": "OK",
+    "headers": {
+      "x-powered-by": "Express",
+      "content-type": "application/json; charset=utf-8",
+      "content-length": "54",
+      "etag": "W/\"36-a3eZIJpFeDlqKnfFRb0bxsseu10\"",
+      "date": "Fri, 16 Oct 2026 09:07:20 GMT",
+      "connection": "close"
+    },
+    "data": "{\"id\":105,\"name\":\"Tejesh\",\"age\":25,\"course\":\"Express\"}"
+  }
+}

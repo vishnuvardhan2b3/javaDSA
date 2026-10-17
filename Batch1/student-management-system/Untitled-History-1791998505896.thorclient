@@ -2,12 +2,12 @@
   "readme": "To open this file inside VSCode, you need to install Thor Client extension https://thorclient.com/",
   "request": {
     "url": {
-      "raw": "http://localhost:3000/students/course?course=python",
+      "raw": "http://localhost:3000/students",
       "query": [
         {
-          "id": "cf44bfde-e638-42d0-b051-95b36bda52df",
-          "key": "course",
-          "value": "python",
+          "id": "d622fa00-badf-4c18-ad0d-934940dd7ece",
+          "key": "a",
+          "value": "",
           "disabled": false,
           "type": "string",
           "isFound": true
@@ -17,6 +17,20 @@
           "key": "c",
           "value": "",
           "disabled": false,
+          "type": "string",
+          "isFound": true
+        },
+        {
+          "id": "11d7d678-36c0-4d14-b6a2-083ac0ccd09d",
+          "key": "course",
+          "value": "p",
+          "type": "string",
+          "isFound": true
+        },
+        {
+          "id": "b6fa76e3-ca2a-4a19-988d-6b125502b7ce",
+          "key": "age",
+          "value": "2",
           "type": "string",
           "isFound": true
         }
@@ -29,7 +43,7 @@
           "language": "json"
         }
       },
-      "raw": "{\n  \"name\":\"ramana\",\n  \"course\":\"java\"\n}"
+      "raw": "{\n  \"name\":\"Vijay Anand\",\n  \"age\":28,\n  \"course\":\"React\"\n}"
     },
     "header": [
       {

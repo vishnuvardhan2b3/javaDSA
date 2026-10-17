@@ -1,0 +1,17 @@
+{
+  "request": "curl --location --request GET 'http://localhost:3000/student' \\\n--header 'Content-Type: application/json' \\\n--data '{\n  \"name\":\"Tejesh\",\n  \"course\":\"Express\"\n}'",
+  "response": {
+    "status": 404,
+    "statusText": "Not Found",
+    "headers": {
+      "x-powered-by": "Express",
+      "content-security-policy": "default-src 'none'",
+      "x-content-type-options": "nosniff",
+      "content-type": "text/html; charset=utf-8",
+      "content-length": "146",
+      "date": "Fri, 16 Oct 2026 09:06:40 GMT",
+      "connection": "close"
+    },
+    "data": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta charset=\"utf-8\">\n<title>Error</title>\n</head>\n<body>\n<pre>Cannot GET /student</pre>\n</body>\n</html>\n"
+  }
+}
